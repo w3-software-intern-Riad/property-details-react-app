@@ -1,0 +1,25 @@
+.notFound {
+    text-align: center;
+    padding: 50px;
+  }
+  
+  .notFound h1 {
+    font-size: 2em;
+    margin-bottom: 20px;
+  }
+  
+  .notFound p {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+  }
+  
+  .homeLink {
+    font-size: 1em;
+    color: #007bff;
+    text-decoration: none;
+  }
+  
+  .homeLink:hover {
+    text-decoration: underline;
+  }
+  

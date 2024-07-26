@@ -1,0 +1,142 @@
+.header {
+  width: 100%;
+  height: 95px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  display: flex;
+}
+
+.left_side-header {
+  display: flex;
+  align-items: center;
+}
+
+.navbar {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#cursor_pointer {
+  cursor: pointer;
+}
+
+.nav_item_3 {
+  color: grey;
+}
+
+.navbarElement1 {
+  display: flex;
+  padding: 10px;
+  margin-left: 40%;
+  justify-content: space-evenly;
+  align-items: center;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  border-radius: 20px 20px;
+}
+
+.vertical_line {
+  height: 24px;
+  /* Adjust this value to match your desired line height */
+  width: 1px;
+  background-color: #ccc;
+  /* Adjust color as needed */
+  margin: 0 10px;
+  /* Adjust spacing as needed */
+}
+
+.navbarElement2 {
+  display: flex;
+  align-items: center;
+}
+
+#searchIcon {
+  height: 30px;
+  width: 30px;
+  padding: 5px;
+  border-radius: 50%;
+  color: white;
+  margin-left: 10px;
+  background-color: #FF6969;
+  cursor: pointer;
+}
+
+#languageIcon,
+#menuIcon,
+#userIcon {
+  height: 30px;
+  width: 30px;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.userMenu {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  border-radius: 20px 20px;
+}
+
+.header2 {
+  display: none;
+}
+
+#cursor_pointer {
+  cursor: pointer;
+}
+
+.nav_item_3 {
+  color: grey;
+}
+
+.left_side_header {
+  display: flex;
+  align-items: center;
+}
+
+#hostedIcon {
+  height: 25px;
+  width: 25px;
+  cursor: pointer;
+}
+
+#mediumIcon {
+  height: 35px;
+  width: 35px;
+  cursor: pointer;
+}
+
+#secondary_text_color {
+  color: grey;
+}
+
+#useApp {
+  font-size: 1rem;
+  border: none;
+  background-color: #3FA2F6;
+  color: white;
+  border-radius: 3px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.getApp{
+  height: 100%;
+
+}
+ h5 ,h6{
+  margin: 0;
+  padding: 5px;
+ }
+@media (min-width: 250px) and (max-width: 932px) {
+  .header2 {
+    display: flex;
+    height: 75px;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+
+  .header {
+    display: none;
+  }
+}

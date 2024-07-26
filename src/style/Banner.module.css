@@ -1,0 +1,271 @@
+.titlebar {
+    display: flex;
+    padding: 10px;
+    /* background-color: red; */
+    justify-content: space-between;
+    align-items: center;
+    font-size: large;
+}
+
+#title {
+    font-size: 2rem;
+}
+
+.rightSideTitlebar {
+    display: flex;
+    padding: 10px;
+    justify-content: space-between;
+    /* background-color: aqua; */
+    align-items: center;
+}
+
+.shareDiv,
+.saveDiv {
+    display: flex;
+
+    /* background-color: antiquewhite; */
+    justify-content: center;
+
+    align-items: center;
+}
+
+#shareIcon {
+    height: 20px;
+    width: 20px;
+}
+
+#saveIcon {
+    display: flex;
+    margin-right: 5px;
+    align-items: center;
+}
+
+#cursor_pointer {
+    cursor: pointer;
+}
+
+
+.gallerySection {
+    display: flex;
+    position: relative;
+    margin: 0;
+    justify-content: start;
+    align-items: center;
+    width: 100%;
+    border-radius: 10px;
+
+    object-fit: cover;
+    height: 500px;
+}
+
+#bedroomImages1 {
+    height: 494px;
+    width: 100%;
+    border-radius: 10px;
+
+    object-fit: cover;
+}
+
+
+#bedroomImages {
+    height: 247px;
+    width: 300px;
+    -o-object-fit: cover;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.secondImageSection {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 500px;
+    -o-object-fit: cover;
+    object-fit: cover;
+}
+
+.secondImageSection1 {
+    display: flex;
+    align-items: center;
+    padding: 2px;
+}
+
+
+.overlay_container {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.overlay {
+    position: absolute;
+    top: 70%;
+    left: 40%;
+    width: 50%;
+    height: 20%;
+    border-radius: 10px;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    border: 2px solid black;
+    /* Add a 2px solid black border */
+    margin-bottom: 5%;
+    /* Add a 10px bottom margin */
+}
+
+.overlay_text {
+    font-size: 16px;
+}
+
+
+.fullGallery {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    z-index: 1000;
+}
+
+.fullGallery img {
+    max-width: 80%;
+    max-height: 80%;
+    margin: 10px;
+}
+
+.fullGallery .close {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background-color: #FF6969;
+    border: none;
+    color: white;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.navigation_buttons {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+   
+   
+}
+
+.navigation-buttons button {
+    background-color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    margin: 10px;
+}
+
+.room_image {
+
+    display: none;
+    width: 100%;
+    height: 0;
+    padding-bottom: 75%;
+    /* Adjust this value to match your image aspect ratio */
+    position: relative;
+    overflow: hidden;
+    border-radius: 12px;
+}
+
+#mobile_banner {
+    border-radius: 10px;
+}
+
+.navigation {
+    position: absolute;
+  top: 10px;
+    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#show_all_photos {
+    height: 25px;
+    width: 25px;
+    background-color: white;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.banner_button {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-left: 90%;
+}
+
+.share img {
+    width: 16px;
+    height: 16px;
+}
+
+.image_count {
+    position: absolute;
+    bottom: 16px;
+    right: 16px;
+    /* Changed from left to right */
+    background-color: rgba(0, 0, 0, 0.6);
+    color: white;
+    padding: 4px 8px;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+.background_image {
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+#hostedIcon {
+    height: 16px;
+    width: 16px;
+    
+    cursor: pointer;
+    border-radius: 50%;
+  }
+  .MobileHeading{
+    margin-top: 10px;
+    padding: 10px;
+    display: none;
+  }
+@media (min-width: 250px) and (max-width: 932px) {
+    .room_image {
+        display: block;
+        margin-top: 10px;
+    }
+
+    .titlebar {
+        display: none;
+    }
+    .MobileHeading{
+       
+        display: inline;
+      }
+    .gallerySection {
+        display: none;
+    }
+    .fullGallery{
+        height:100%;
+        width: 100%;
+    }
+}

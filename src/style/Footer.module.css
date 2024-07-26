@@ -1,0 +1,200 @@
+.noReviewSubsec {
+    display: flex;
+    align-items: center;
+}
+
+.hostedIcon {
+    height: 25px;
+    width: 25px;
+    margin: 0;
+    cursor: pointer;
+}
+
+.showReviewsLink {
+    color: #000;
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+.mapImage {
+    width: 100%;
+}
+
+.shRightPortion {
+    line-height: .5ch;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.showMore {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    align-items: center;
+}
+
+.showMoreText {
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.starIcon {
+    height: 25px;
+    width: 25px;
+    cursor: pointer;
+}
+
+.meetOurHost {
+    display: flex;
+}
+
+.leftDetails {
+    display: flex;
+   
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.superHost {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+    width: 100%;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    height: 270px;
+}
+
+.shLeftPortion {
+    display: flex;
+    padding: 10px;
+    flex-direction: column;
+    align-items: start;
+    text-align: center;
+}
+
+.shLeftPortion h3 {
+    margin: 5px 0;
+    font-size: 1.6rem;
+}
+
+.hostedPerson {
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.superHostPerson {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.ratingText {
+    display: flex;
+    align-items: center;
+}
+
+.bornDetail,
+.workDetail {
+    display: flex;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+}
+
+.dummyLine {
+    display: none;
+}
+
+.rightDetails {
+    margin-left: 10%;
+}
+
+.coHosts {
+    display: flex;
+    align-items: center;
+}
+
+.userImage {
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.thirdTextColor {
+    font-weight: normal;
+}
+
+.messageHost {
+    padding: 15px;
+    background-color: black;
+    color: white;
+    border-radius: 10px;
+    font-size: large;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.reportIconSecond {
+    display: none;
+}
+
+.paginationPortion {
+    padding: 10px;
+    background-color: rgb(236, 228, 228);
+    margin: 0;
+    width: 100%;
+    border: 1px solid black;
+    box-sizing: border-box;
+}
+
+.footerPortion1 {
+    display: flex;
+    
+    justify-content: space-between;
+    margin: 0;
+}
+
+.firstTextFooter {
+    display: flex;
+    margin: 0;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.thingsToKnow {
+    display: flex;
+    justify-content: space-between;
+}
+#secondary_text_color{
+    color: grey;
+}
+
+@media (min-width: 250px) and (max-width: 932px){
+    .leftDetails{
+       
+       width: 100%;
+    }
+    .superHost{
+       
+       width: 320px;
+      
+    }
+    .thingsToKnow{
+        flex-direction: column;
+
+    }
+    .dummyLine{
+        display: inline;
+    }
+    .meetOurHost{
+        width: 100%;
+       flex-direction: column;
+    }
+    
+}

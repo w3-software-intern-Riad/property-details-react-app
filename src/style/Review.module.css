@@ -1,0 +1,314 @@
+.reviewSectionLeft {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.reviewRightSection {
+    
+    height: 350px;
+
+    width: 300px;
+    justify-content: space-between;
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    padding: 10px;
+}
+
+.reviewSection {
+    margin-top: 20px;
+    display: flex;
+   
+}
+
+.reviewTitle {
+    margin: 0;
+}
+
+.starIcon {
+    height: 25px;
+    width: 25px;
+    cursor: pointer;
+}
+
+.starIconDiv {
+    display: flex;
+    align-items: center;
+}
+
+.bedroomDetail {
+    color: grey;
+}
+
+.hosted {
+    padding: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.hostedDetail {
+    color: grey;
+}
+
+.footerTitle1 {
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    background-color: whitesmoke;
+    border-radius: 10px;
+}
+
+.hostedPerson {
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.horizontalLine {
+    color: grey;
+}
+
+.hostedIcon {
+    height: 25px;
+    width: 25px;
+    cursor: pointer;
+}
+
+.table1 {
+    margin: 0;
+    border-collapse: collapse;
+}
+
+.table1 td {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+
+.showMore {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    align-items: center;
+}
+
+.secondaryTextColor {
+    color: grey;
+}
+
+.starIcon {
+    height: 25px;
+    width: 25px;
+    cursor: pointer;
+}
+
+.showMoreText {
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.sleepSpaceImage {
+    height: 300px;
+    width: 400px;
+    object-fit: cover;
+    border-radius: 20px;
+}
+
+.secondaryTextColor {
+    color: grey;
+}
+
+.offerList {
+    display: flex;
+    margin: 0;
+}
+
+.listTitleIcon {
+    padding: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.commonListIcon {
+    height: 25px;
+    width: 25px;
+    margin-right: 10px;
+}
+
+.rightList {
+    display: flex;
+    flex-direction: column;
+}
+
+.btnShowAmenities {
+    margin-top: 10px;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    background-color: transparent;
+    font-size: larger;
+}
+
+.calendarContainer {
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+}
+
+.calendarHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.calendars {
+    display: flex;
+    gap: 10px;
+}
+
+.month {
+    flex: 1;
+}
+
+.augustMonth {
+    flex: 1;
+}
+
+.weekdays,
+.days {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    text-align: center;
+}
+
+.weekdays span {
+    font-weight: bold;
+    padding: 5px;
+    font-size: 0.8em;
+    color: #757575;
+}
+
+.days span {
+    padding: 8px;
+    cursor: pointer;
+    font-size: 0.9em;
+}
+
+.days span:hover {
+    background-color: #f0f0f0;
+    border-radius: 50%;
+}
+
+.calendarFooter {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+}
+
+button {
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 50%;
+    background-color: #FF6969;
+}
+
+/* Style for empty date cells */
+.days span:empty {
+    cursor: default;
+}
+
+.days span:empty:hover {
+    background-color: transparent;
+}
+
+.thirdTextColor {
+    font-weight: normal;
+}
+
+.secondRow {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.RoomDetailsDiv{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.checkButton {
+    margin-top: 20px;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    background-color: #FF6969;
+    justify-content: center;
+    width: 100%;
+    border-radius: 5px;
+    color: white;
+    font-size: larger;
+}
+
+
+.reportIcon {
+
+
+    display: flex;
+    margin-top: 10px;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+
+
+}
+
+@media (min-width: 250px) and (max-width: 932px) {
+    .rightList {
+        display: none;
+    }
+
+    .reviewRightSection {
+        display: none;
+    }
+
+    .augustMonth {
+        display: none;
+    }
+
+    .sleepSpaceImage {
+        width: 100%;
+        
+    }
+    
+
+    .weekdays,
+    .days {
+        display: grid;
+        grid-template-columns: repeat(7, .2fr);
+        text-align: center;
+    }
+    .meetOurHost{
+        margin: 0;
+        padding: 0;
+        width: 100%;
+    }
+    .reviewTitle{
+       
+        width: 100%;
+    }
+    .hosted{
+        width: 100%;
+    }
+    .RoomDetailsDiv{
+        flex-direction: column;
+    }
+}
