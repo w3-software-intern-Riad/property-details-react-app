@@ -17,6 +17,7 @@ A responsive React application for viewing hotel and property details, including
 - CSS for styling
 - Axios for API requests
 - React Router DOM for routing
+- React Shimmer for loading images, enhancing the user experience by providing a smooth image loading effect
 
 ## Getting Started
 
@@ -31,8 +32,8 @@ A responsive React application for viewing hotel and property details, including
 ```https://github.com/w3-software-intern-Riad/property-details-react-app.git```
 
 2. Navigate to the project directory:
-3. Install dependencies:```npm install```
-4. Start the development server:```npm run dev```
+3. Install dependencies: ```npm install```
+4. Start the development server: ```npm run dev```
 5. Open your browser and visit `http://localhost:5173` to view the app.
 
 ## API Integration

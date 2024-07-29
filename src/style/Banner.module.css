@@ -49,7 +49,7 @@
     display: flex;
     position: relative;
     margin: 0;
-    justify-content: start;
+    justify-content: space-between;
     align-items: center;
     width: 100%;
     border-radius: 10px;
@@ -60,7 +60,8 @@
 
 #bedroomImages1 {
     height: 494px;
-    width: 100%;
+    width: 1000px;
+    
     border-radius: 10px;
 
     object-fit: cover;
@@ -70,22 +71,25 @@
 #bedroomImages {
     height: 247px;
     width: 300px;
-    -o-object-fit: cover;
+    
     object-fit: cover;
     border-radius: 10px;
 }
 
 .secondImageSection {
     display: flex;
+   
+    
     flex-direction: column;
     align-items: center;
     height: 500px;
-    -o-object-fit: cover;
+    justify-content: center;
     object-fit: cover;
 }
 
 .secondImageSection1 {
     display: flex;
+    justify-content: center;
     align-items: center;
     padding: 2px;
 }

@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useContext } from 'react'
+import React, { useState } from 'react'
 import styles from "../../style/Banner.module.css"
 import ShareIcon from "../../assets/icons/share.png"
 import Bedroom from "../../assets/images/bedroom.jpg"
@@ -6,6 +6,7 @@ import Bedroom from "../../assets/images/bedroom.jpg"
 import B3 from "../../assets/images/b-3.jpeg"
 import Menu from "../../assets/icons/3dotmenu.png"
 
+import ImageWithFallback from '../ImageShimmer'
 
 const Banner = ({ hotelData }) => {
 
@@ -62,16 +63,16 @@ const Banner = ({ hotelData }) => {
                 </div>
 
                 <div className={styles.gallerySection}>
-                    <img id={styles.bedroomImages1} src={hotelData.hotelData.images[0]} alt="bedroom" />
+                    <ImageWithFallback id={styles.bedroomImages1} src={hotelData.hotelData.images[0]} alt="bedroom" />
                     <div className={styles.secondImageSection}>
                         <div className={styles.secondImageSection1}>
-                            <img id={styles.bedroomImages} src={hotelData.hotelData.images[1]} alt="bedroom2" />
-                            <img id={styles.bedroomImages} src={hotelData.hotelData.images[2]} alt="bedroom3" />
+                            <ImageWithFallback id={styles.bedroomImages} src={hotelData.hotelData.images[1]} alt="bedroom2" />
+                            <ImageWithFallback id={styles.bedroomImages} src={hotelData.hotelData.images[2]} alt="bedroom3" />
                         </div>
                         <div className={styles.secondImageSection1}>
-                            <img id={styles.bedroomImages} src={hotelData.hotelData.images[3]} alt="bedroom4" />
+                            <ImageWithFallback id={styles.bedroomImages} src={hotelData.hotelData.images[3]} alt="bedroom4" />
                             <div className={styles.overlay_container}>
-                                <img id={styles.bedroomImages} src={B3} alt="bedroom5" />
+                                <ImageWithFallback id={styles.bedroomImages} src={B3} alt="bedroom5" />
                                 <div className={styles.overlay}>
 
                                     <span onClick={openGallery} className={styles.overlay_text}>Show all photos</span>
@@ -93,7 +94,46 @@ const Banner = ({ hotelData }) => {
                         <img src={hotelData.hotelData.images[currentImageIndex]} alt={`Full view ${currentImageIndex + 1}`} />
                     </div>
                 )}
-            </>) : <div>Loading....</div>}
+            </>) : <div style={{
+                display: 'flex',
+                justifyContent: 'center',
+                alignItems: 'center',
+                height: '100vh',
+                background: '#f0f0f0',
+                fontFamily: 'Arial, sans-serif'
+            }}>
+                <div style={{
+                    display: 'flex',
+                    alignItems: 'center'
+                }}>
+                    <span style={{
+                        fontSize: '24px',
+                        marginRight: '15px',
+                        color: '#333'
+                    }}>
+                        Loading
+                    </span>
+                    {[0, 1, 2].map((i) => (
+                        <div key={i} style={{
+                            width: '10px',
+                            height: '10px',
+                            margin: '0 5px',
+                            borderRadius: '50%',
+                            backgroundColor: '#333',
+                            animation: 'pulse 1.4s infinite ease-in-out both',
+                            animationDelay: `${i * 0.16}s`
+                        }} />
+                    ))}
+                </div>
+                <style>
+                    {`
+      @keyframes pulse {
+        0%, 80%, 100% { transform: scale(0); }
+        40% { transform: scale(1); }
+      }
+    `}
+                </style>
+            </div>}
 
         </>
     )
