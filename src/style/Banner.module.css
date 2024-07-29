@@ -209,9 +209,9 @@
 
 .banner_button {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
     align-items: center;
-    margin-left: 90%;
+    margin-left: 50%;
 }
 
 .share img {
