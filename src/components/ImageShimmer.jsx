@@ -8,7 +8,7 @@ const ImageWithFallback = ({ src, alt, id, className }) => {
 
   return (
     <div >
-      {!loaded && <Shimmer width="300px" height="300px" />}
+      {!loaded && <Shimmer width={300} height={300} />}
       <img
       className={className}
         id={id}

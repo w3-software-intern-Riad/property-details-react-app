@@ -154,7 +154,7 @@ const Footer = ({hotelData}) => {
             <h2>Explore other options in and around Lima</h2>
             <div className={styles.footerPortion1}>
                 {/* Footer columns content */}
-                <div class="footer-col-1">
+                <div >
                     <h4>Cieneguilla</h4>
                     <h4 id={styles.secondary_text_color}>Vacation rentals</h4>
 
@@ -167,7 +167,7 @@ const Footer = ({hotelData}) => {
 
 
                 </div>
-                <div class="footer-col-2">
+                <div >
                     <h4>Punta Hermosa</h4>
                     <h4 id={styles.secondary_text_color}>Vacation rentals</h4>
 
@@ -180,7 +180,7 @@ const Footer = ({hotelData}) => {
 
 
                 </div>
-                <div class="footer-col-3">
+                <div >
                     <h4>Asia</h4>
                     <h4 id={styles.secondary_text_color}>Vacation rentals</h4>
 
