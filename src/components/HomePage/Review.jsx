@@ -24,8 +24,6 @@ import ReportIcon from "../../assets/icons/red-flag.png"
 import RoomDetails from './RoomDetails';
 
 const Review = ({hotelData}) => {
-
-  console.log("Full data : ", hotelData)
   return (
     <>
 
