@@ -14,9 +14,9 @@ function App() {
       <BrowserRouter>
         <Routes>
           {/* Redirect from root path to default path */}
-          <Route path="/" element={<Navigate to="/hotels/beautiful-hotel" />} />
+          <Route path="/" element={<Navigate to="/hotel/beautiful-hotel" />} />
           {/* Define the route for /hotels/:hotelName */}
-          <Route path="/hotels/:hotel_slug" element={<HomePageElement />} />
+          <Route path="/hotel/:hotel_slug" element={<HomePageElement />} />
           {/* Optional: A 404 page for unmatched routes */}
           <Route path="/not-found" element={<NotFoundPage />} />
         </Routes>
